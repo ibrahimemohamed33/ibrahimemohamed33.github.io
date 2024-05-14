@@ -3,5 +3,5 @@
 
 export const SITE_TITLE = "Ibrahim Mohamed";
 export const SITE_DESCRIPTION = "Personal Website for Ibrahim E. Mohamed";
-export const GENERATE_SLUG_FROM_TITLE = true;
+export const GENERATE_SLUG_FROM_TITLE = false;
 export const TRANSITION_API = true;
