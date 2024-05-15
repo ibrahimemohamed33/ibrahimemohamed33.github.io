@@ -91,21 +91,23 @@ const last_posts = posts.slice(0, 1);
     ))
   }
   {
-    <Image
-            src={"/profile_2.webp"}
-            width={500}
-            height={500}
-            alt="Image of me in the wild"
-            format="webp"
-            class="max-w-full md:max-w-[13rem]"
-    /> && 
-    <Image
-            src={"/profile_1.webp"}
-            width={500}
-            height={500}
-            alt="Image of me with cat"
-            format="webp"
-            class="max-w-full md:max-w-[13rem]"
-    /> 
+    <container class="flex">
+      <Image
+        src={"/profile_2.webp"}
+        width={500}
+        height={500}
+        alt="Image of me in the wild"
+        format="webp"
+        class="max-w-full md:max-w-[13rem]"
+      />
+      <Image
+        src={"/profile_1.webp"}
+        width={500}
+        height={500}
+        alt="Image of me with cat"
+        format="webp"
+        class="max-w-full md:max-w-[13rem]"
+      />
+    </container>
   }
 </BaseLayout>
