@@ -1,56 +1,48 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
-tags: ["tokio"]
+title: "Translating Asheq el Rooh"
+description: "My attempt at providing context to a powerful song written by one of Egypt's foremost musicians."
+pubDate: "May 14, 2024"
+heroImage: "/abdel_wahab.webp"
+tags: ["Music", "Arabic", "Translation"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+The song Asheq el Rooh by Muhammad Abdel Wahab is one that, at first glance, seems to contradict the comedic atmosphere of the movie _Ghazal Al Binaat_ (The Flirtation of Girls). The film portrays, with all its jokes and laughter, that the love Mr. Hamaam feels for his (college-aged) student, Laila, is unrequited given their age differences. Hamaam is subconsciously aware of this fact but refuses to accept it. To him, Laila was the first person to show him joy in a life that felt miserable. He was poor and resentful towards the world because bad luck was an omnipresent force in his life. The song, with a title translating to “the passion of the soul,” or as we’d say “soulmate” in English, talks about love. There is a sense of dramatic irony that comes with Abdel Wahab’s song since he does not know anything about Hamaam’s or Laila’s situation. Yet, the audience knows he alludes to Hamaam’s love for Laila when the two eavesdrop into Abdel Wahab’s performance.
+What sets this song apart from other love songs is that Abdel Wahab sings about showing love by accepting the heartbreak of letting someone go, finding joy in their happiness. Abdel Wahab discusses in his interviews how he was inspired by some main themes within the Quran. Namely, how one should search within their heart or soul to find love even if their current emotions evoke other feelings. The lyrics resonated so well with the cast that Hamaam’s tears in the film were genuine, as Abdel Wahab later talks about.
+Abdel Wahab sings about his sweetheart leaving him despite sacrificing his life for her happiness. He emphasizes the inconsolable pain of losing someone he loved. And how sleepless nights were filled with tears. Moreover, he loves to invoke the double-meaning of his eyes while following the tendency in Arabic poetry to refer to a person’s lover as their eyes. When you love someone they bring a new pair of eyes to the world that changes your opinion of yourself and the world around you. They make you see the world in a better way and bring a beam of light to the dark world. Similarly, when you lose someone, as with losing your eyes, you cannot see the world in the same state it once was. 
+Abdel Wahab begins the song in a deep state of sadness as he laments the loss of his loved one. But as we progress throughout the song we notice he comes to terms with this loss. We start seeing the beauty of this song in how it changes course from following the stereotypes of most heartbreak songs, to moving towards acceptance. He believes that if one truly loves someone, no matter how painful it is to lose them, one must let them go so they can enjoy their life the way they want. And that while we are inclined to want them to stay, these (selfish) feelings are transient compared to the infinite love that comes from our soul. This song is truly a work of art. Moreover, it brought a great ending to the last film for one of Egypt’s infamous actors: Naguib Rihaani.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+## My translation of the lyrics:
+Why, why, why,
+why O eye[his eye] are my nights so long?
+Why, why, why, why my eye are my tears flowing?
+O my eyes[his lover], my sweetheart why did you abandon me?
+Why can she[his lover] sleep but you are awake, O my eyes why why?
+O night, my eye, I complained during my insomniac nights
+And O night, the cup in my hand is filled with the tears of my eye,
+And how many times do I wake up in the early mornings and my promises wake me up
+And even the eye suddenly(?) wakes up with tears on my cheeks 
+to the person who preoccupies my mind, 
+the one who takes me away from [playing a sad song] on my broken oud.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+I sacrificed my life for her
+And I will only live on in her memory
+I sacrificed my life for her
+And I will only live on in her memory
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+I’m visiting her world, like day and night
+And everything has happened and you’re not [doing things] in my favor
+And you’re forgetting about me [while I feel like] I’m next to you
+I really tried to confess my love and complain and get closer for you [to hear] my complaints
+And I found you in the high sky,
+And I’m on the ground, where I couldn’t reach you
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+So I embraced my complaint in my heart and weaned off my soul from your door
+I desired love in a temple built by my soul and my being
+And I left hope as a monk [for] I have no other hope
+And I’m lighting a candle for others and the candle’s light burns in my embrace
+And I sell my soul for the sake of my soul
+And I am satisfied with my deprivation
+For the love of the soul will never end, 
+but the love of the flesh passes
+The love of the soul will never end, but the love of the flesh passes
+
