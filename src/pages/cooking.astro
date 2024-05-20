@@ -27,69 +27,67 @@ import '../styles/cooking.css';
     </div>
     <div class="divider my-0"></div>
   </div>
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Some of My Dishes</div>
-      <div class="gallery" id="astro-gallery">
-        <!-- Images and names will be added here dynamically -->
-      </div>
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Some of My Dishes</div>
+    <div class="gallery" id="astro-gallery">
+      <!-- Images and names will be added here dynamically -->
     </div>
   </div>
 
-  
-<script>
-  // JavaScript for preloading images and dynamically adding images and names
-  window.addEventListener("load", function() {
-    const images = [
-      { src: '/food_1.webp', name: 'Astro Photo 1' },
-      { src: '/food_1.webp', name: 'Astro Photo 2' },
-      { src: '/food_1.webp', name: 'Astro Photo 3' },
-      { src: '/food_1.webp', name: 'Astro Photo 4' },
-      { src: '/food_1.webp', name: 'Astro Photo 5' },
-      { src: '/food_1.webp', name: 'Astro Photo 6' },
-    ];
+  <!-- JavaScript for preloading images and dynamically adding images and names -->
+  <script>
+    (function() {
+      const images = [
+        { src: '/food_1.webp', name: 'Astro Photo 1' },
+        { src: '/food_1.webp', name: 'Astro Photo 2' },
+        { src: '/food_1.webp', name: 'Astro Photo 3' },
+        { src: '/food_1.webp', name: 'Astro Photo 4' },
+        { src: '/food_1.webp', name: 'Astro Photo 5' },
+        { src: '/food_1.webp', name: 'Astro Photo 6' },
+      ];
 
-    // Preload images
-    const preloadImages = () => {
-      for (const image of images) {
-        const img = new Image();
-        img.src = image.src;
-      }
-    };
-
-    // Add images and names dynamically
-    const addImages = () => {
-      const gallery = document.getElementById('astro-gallery');
-      let currentRow;
-
-      images.forEach((image, index) => {
-        if (index % 3 === 0) {
-          currentRow = document.createElement('div');
-          currentRow.classList.add('gallery-row');
-          gallery.appendChild(currentRow);
+      // Preload images
+      const preloadImages = () => {
+        for (const image of images) {
+          const img = new Image();
+          img.src = image.src;
         }
+      };
 
-        const imageContainer = document.createElement('div');
-        imageContainer.classList.add('image-container');
+      // Add images and names dynamically
+      const addImages = () => {
+        const gallery = document.getElementById('astro-gallery');
+        let currentRow;
 
-        const img = document.createElement('img');
-        img.src = image.src;
-        img.alt = image.name;
+        images.forEach((image, index) => {
+          if (index % 3 === 0) {
+            currentRow = document.createElement('div');
+            currentRow.classList.add('gallery-row');
+            gallery.appendChild(currentRow);
+          }
 
-        const name = document.createElement('div');
-        name.textContent = image.name;
-        name.classList.add('image-caption');
+          const imageContainer = document.createElement('div');
+          imageContainer.classList.add('image-container');
 
-        imageContainer.appendChild(img);
-        imageContainer.appendChild(name);
-        currentRow.appendChild(imageContainer);
-      });
-    };
+          const img = document.createElement('img');
+          img.src = image.src;
+          img.alt = image.name;
 
-    // Preload images before adding them dynamically
-    preloadImages();
+          const name = document.createElement('div');
+          name.textContent = image.name;
+          name.classList.add('image-caption');
 
-    // Add images and names after preloading
-    addImages();
-  });
-</script>
+          imageContainer.appendChild(img);
+          imageContainer.appendChild(name);
+          currentRow.appendChild(imageContainer);
+        });
+      };
+
+      // Preload images before adding them dynamically
+      preloadImages();
+
+      // Add images and names after preloading
+      addImages();
+    })();
+  </script>
 </BaseLayout>
