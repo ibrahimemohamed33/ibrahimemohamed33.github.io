@@ -9,7 +9,30 @@ import '../styles/cooking.css';
 
 <BaseLayout sideBarActiveItemID="cooking">
   <div class="pb-12 mt-5">
-    <!-- Your existing content -->
+    <div class="text-xl py-1"><b>My Journey With Cooking</b></div>
+    <div class="py-2">
+      <text class="text-lg">
+        I got into cooking in 2022 and really enjoyed learning the techniques
+      </text>
+    </div>
+    <div class="py-2">
+      <text class="text-lg">
+        Hey, welcome to my website! I’m a data engineer at Acorns and located in the D.C. area. 
+      </text>
+    </div>  
+    <div class="py-2">
+      <text class="text-lg">
+        Don't let my poor photography fool you
+      </text>
+    </div>
+    <div class="divider my-0"></div>
+    <div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">Some of My Dishes</div>
+      <div class="gallery" id="astro-gallery">
+        <!-- Images and names will be added here dynamically -->
+      </div>
+    </div>
+  </div>
     <div class="divider my-0"></div>
     <div>
       <div class="text-3xl w-full font-bold mb-5 mt-10">Some of My Dishes</div>
@@ -20,20 +43,29 @@ import '../styles/cooking.css';
   </div>
 
   
-  <script>
-    // JavaScript for dynamically adding images and names
-    document.addEventListener("DOMContentLoaded", function() {
-      const images = [
-        { src: '/food_1.webp', name: 'Astro Photo 1' },
-        { src: '/food_1.webp', name: 'Astro Photo 2' },
-        { src: '/food_1.webp', name: 'Astro Photo 3' },
-        { src: '/food_1.webp', name: 'Astro Photo 4' },
-        { src: '/food_1.webp', name: 'Astro Photo 5' },
-        { src: '/food_1.webp', name: 'Astro Photo 6' },
-      ];
+<script>
+  // JavaScript for preloading images and dynamically adding images and names
+  document.addEventListener("DOMContentLoaded", function() {
+    const images = [
+      { src: '/food_1.webp', name: 'Astro Photo 1' },
+      { src: '/food_1.webp', name: 'Astro Photo 2' },
+      { src: '/food_1.webp', name: 'Astro Photo 3' },
+      { src: '/food_1.webp', name: 'Astro Photo 4' },
+      { src: '/food_1.webp', name: 'Astro Photo 5' },
+      { src: '/food_1.webp', name: 'Astro Photo 6' },
+    ];
 
+    // Preload images
+    const preloadImages = () => {
+      for (const image of images) {
+        const img = new Image();
+        img.src = image.src;
+      }
+    };
+
+    // Add images and names dynamically
+    const addImages = () => {
       const gallery = document.getElementById('astro-gallery');
-
       let currentRow;
 
       images.forEach((image, index) => {
@@ -58,6 +90,13 @@ import '../styles/cooking.css';
         imageContainer.appendChild(name);
         currentRow.appendChild(imageContainer);
       });
-    });
-  </script>
+    };
+
+    // Preload images before adding them dynamically
+    preloadImages();
+
+    // Add images and names after preloading
+    addImages();
+  });
+</script>
 </BaseLayout>
