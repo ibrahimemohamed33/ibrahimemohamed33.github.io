@@ -33,6 +33,29 @@ import { Image } from "astro:assets";
     </div>
   </div>
 
+  <style>
+    /* CSS for gallery layout */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image-container {
+      margin: 10px;
+      text-align: center;
+      width: calc(100% / 5 - 20px); /* 20px for margin */
+    }
+    .image-container img {
+      max-width: calc(100% / 3);
+      max-height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .image-caption {
+      font-weight: bold;
+    }
+  </style>
+
   <script>
     // JavaScript for dynamically adding images and names
     document.addEventListener("DOMContentLoaded", function() {
@@ -65,7 +88,7 @@ import { Image } from "astro:assets";
 
         const name = document.createElement('div');
         name.textContent = image.name;
-        name.style.fontWeight = 'bold';
+        name.classList.add('image-caption');
 
         imageContainer.appendChild(img);
         imageContainer.appendChild(name);
