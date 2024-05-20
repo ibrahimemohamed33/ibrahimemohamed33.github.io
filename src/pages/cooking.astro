@@ -5,8 +5,6 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 import { Image } from "astro:assets";
 ---
-
-
 <BaseLayout sideBarActiveItemID="cooking">
   <div class="pb-12 mt-5">
     <!-- Your existing content -->
@@ -19,7 +17,7 @@ import { Image } from "astro:assets";
     </div>
   </div>
 
-<style>
+  <style>
     /* CSS for gallery layout */
     .gallery {
       display: flex;
@@ -34,8 +32,12 @@ import { Image } from "astro:assets";
     .image-container {
       margin: 10px;
       text-align: center;
-      width: 18%; /* Adjusted for 5 images per row */
+      width: calc(20% - 20px); /* Adjusted for 5 images per row */
       max-width: 150px; /* Set maximum width for images */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .image-container img {
       width: 100%; /* Make the images fill the container */
