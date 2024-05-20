@@ -20,21 +20,30 @@ import { Image } from "astro:assets";
   </div>
 
   <style>
+<style>
     /* CSS for gallery layout */
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+    .gallery-row {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
     .image-container {
       margin: 10px;
       text-align: center;
       width: calc(20% - 20px); /* Adjusted for 5 images per row */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .image-container img {
-      width: 100%; /* Make the images fill the container */
+      max-width: 100%; /* Set maximum width to prevent oversized images */
       height: auto; /* Maintain aspect ratio */
-      max-width: 100%; /* Ensure images don't exceed container width */
     }
     .image-caption {
       font-weight: bold;
@@ -45,10 +54,10 @@ import { Image } from "astro:assets";
     // JavaScript for dynamically adding images and names
     document.addEventListener("DOMContentLoaded", function() {
       const images = [
-        { src: '/profile_1.webp', name: 'Astro Photo 1' },
-        { src: '/profile_2.webp', name: 'Astro Photo 2' },
-        { src: '/profile_3.webp', name: 'Astro Photo 3' },
-        { src: '/profile_4.webp', name: 'Astro Photo 4' },
+        { src: '/profile_5.webp', name: 'Astro Photo 1' },
+        { src: '/profile_5.webp', name: 'Astro Photo 2' },
+        { src: '/profile_5.webp', name: 'Astro Photo 3' },
+        { src: '/profile_5.webp', name: 'Astro Photo 4' },
         { src: '/profile_5.webp', name: 'Astro Photo 5' },
         { src: '/profile_5.webp', name: 'Astro Photo 6' },
       ];
@@ -60,7 +69,7 @@ import { Image } from "astro:assets";
       images.forEach((image, index) => {
         if (index % 5 === 0) {
           currentRow = document.createElement('div');
-          currentRow.classList.add('gallery-row'); // Added class for gallery row
+          currentRow.classList.add('gallery-row');
           gallery.appendChild(currentRow);
         }
 
