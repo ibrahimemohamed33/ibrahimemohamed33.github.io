@@ -27,8 +27,8 @@
   }
 
   .image-container img {
-    width: 12.5%; /* 1/8 of their original size */
-    height: 12.5%; /* Maintain aspect ratio */
+    width: auto; /* 1/8 of their original size */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .image-caption {
