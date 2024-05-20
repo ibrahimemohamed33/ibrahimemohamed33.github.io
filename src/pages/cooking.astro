@@ -18,50 +18,7 @@ import { Image } from "astro:assets";
     </div>
   </div>
 
-  <style>
-    /* CSS for gallery layout */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .gallery-row {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .image-container {
-      margin: 10px;
-      text-align: center;
-      width: calc(20% - 20px); /* Adjusted for 5 images per row */
-      max-width: 150px; /* Set maximum width for images */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative; /* Added for absolute positioning of caption */
-    }
-
-    .image-container img {
-      width: 12.5%; /* 1/8 of their original size */
-      height: 12.5%; /* Maintain aspect ratio */
-    }
-
-    .image-caption {
-      font-weight: bold;
-      position: absolute; /* Position the caption */
-      bottom: 0; /* Place the caption at the bottom */
-      left: 0; /* Align the caption to the left */
-      right: 0; /* Align the caption to the right */
-      width: 100%; /* Span the entire width of the container */
-      padding: 5px; /* Add some padding */
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-      color: black; /* Text color */
-    }
-  </style>
-
+  
   <script>
     // JavaScript for dynamically adding images and names
     document.addEventListener("DOMContentLoaded", function() {
