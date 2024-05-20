@@ -26,12 +26,6 @@ import '../styles/cooking.css';
       </text>
     </div>
     <div class="divider my-0"></div>
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Some of My Dishes</div>
-      <div class="gallery" id="astro-gallery">
-        <!-- Images and names will be added here dynamically -->
-      </div>
-    </div>
   </div>
     <div class="divider my-0"></div>
     <div>
@@ -45,7 +39,7 @@ import '../styles/cooking.css';
   
 <script>
   // JavaScript for preloading images and dynamically adding images and names
-  document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("load", function() {
     const images = [
       { src: '/food_1.webp', name: 'Astro Photo 1' },
       { src: '/food_1.webp', name: 'Astro Photo 2' },
