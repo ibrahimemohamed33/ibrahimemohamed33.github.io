@@ -8,7 +8,7 @@ const PhotoGallery = ({ images }) => {
     <div className="gallery">
       {images.map((image, index) => (
         <div className="image-container" key={index}>
-          <Image src={image.src} alt={image.name} />
+          <Image src={image.src} alt={image.name} format="webp" />
           <div className="image-caption">{image.name}</div>
         </div>
       ))}
