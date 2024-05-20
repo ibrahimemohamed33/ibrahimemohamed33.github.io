@@ -19,7 +19,6 @@ import { Image } from "astro:assets";
     </div>
   </div>
 
-  <style>
 <style>
     /* CSS for gallery layout */
     .gallery {
@@ -35,14 +34,11 @@ import { Image } from "astro:assets";
     .image-container {
       margin: 10px;
       text-align: center;
-      width: calc(20% - 20px); /* Adjusted for 5 images per row */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      width: 18%; /* Adjusted for 5 images per row */
+      max-width: 150px; /* Set maximum width for images */
     }
     .image-container img {
-      max-width: 100%; /* Set maximum width to prevent oversized images */
+      width: 100%; /* Make the images fill the container */
       height: auto; /* Maintain aspect ratio */
     }
     .image-caption {
