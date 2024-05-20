@@ -10,50 +10,55 @@
     </div>
   </div>
 
-  <style>
-    /* CSS for gallery layout */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .image-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-    .image-container {
-      position: relative; /* Relative positioning for absolute positioning of caption */
-      margin: 10px;
-      text-align: center;
-      width: calc(20% - 20px); /* 20% for 5 images per row, 20px for margin */
-    }
-    .image-container img {
-      width: 100%; /* Make the images fill the container */
-      height: auto; /* Maintain aspect ratio */
-      max-width: 100%; /* Ensure images don't exceed container width */
-    }
-    .image-caption {
-      position: absolute; /* Position caption relative to container */
-      bottom: 0; /* Align caption to bottom */
-      left: 0; /* Center caption horizontally */
-      right: 0; /* Center caption horizontally */
-      padding: 5px; /* Add some padding */
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-      color: black; /* White text color */
-      font-weight: bold;
-    }
-  </style>
+<style>
+  /* CSS for gallery layout */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    width: calc(20% - 20px); /* Adjusted for 5 images per row */
+    flex: 0 0 calc(20% - 20px); /* Adjusted for 5 images per row */
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    font-weight: bold;
+  }
+</style>
 
   <script>
     // JavaScript for dynamically adding images and names
     document.addEventListener("DOMContentLoaded", function() {
       const images = [
-        { src: '/profile_5.webp', name: 'Astro Photo 1' },
-        { src: '/profile_5.webp', name: 'Astro Photo 2' },
-        { src: '/profile_5.webp', name: 'Astro Photo 3' },
-        { src: '/profile_5.webp', name: 'Astro Photo 4' },
+        { src: '/profile_1.webp', name: 'Astro Photo 1' },
+        { src: '/profile_2.webp', name: 'Astro Photo 2' },
+        { src: '/profile_3.webp', name: 'Astro Photo 3' },
+        { src: '/profile_4.webp', name: 'Astro Photo 4' },
         { src: '/profile_5.webp', name: 'Astro Photo 5' },
         { src: '/profile_5.webp', name: 'Astro Photo 6' },
       ];
