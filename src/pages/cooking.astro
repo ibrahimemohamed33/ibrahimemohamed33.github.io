@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug";
+import { onPageLoad } from "astro/dist/core.mjs";
 import '../styles/cooking.css';
 ---
 
@@ -25,18 +24,17 @@ import '../styles/cooking.css';
     </div>
     <div class="divider my-0"></div>
   </div>
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Some of My Dishes</div>
-      <div class="gallery" id="astro-gallery">
-        <!-- Images and names will be added here dynamically -->
-      </div>
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Some of My Dishes</div>
+    <div class="gallery" id="astro-gallery">
+      <!-- Images and names will be added here dynamically -->
     </div>
   </div>
+</BaseLayout>
 
-  
 <script>
-  // JavaScript for preloading images and dynamically adding images and names
-  window.addEventListener("load", function() {
+  onPageLoad(() => {
+    // JavaScript for preloading images and dynamically adding images and names
     const images = [
       { src: '/food_1.webp', name: 'Astro Photo 1' },
       { src: '/food_1.webp', name: 'Astro Photo 2' },
@@ -90,4 +88,3 @@ import '../styles/cooking.css';
     addImages();
   });
 </script>
-</BaseLayout>
