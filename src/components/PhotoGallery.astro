@@ -1,0 +1,21 @@
+// PhotoGallery.astro
+---
+import { Image } from "astro:assets";
+---
+
+const PhotoGallery = ({ images }) => (
+  <div className="gallery">
+    {[...Array(Math.ceil(images.length / 3))].map((_, rowIndex) => (
+      <div className="gallery-row" key={rowIndex}>
+        {images.slice(rowIndex * 3, (rowIndex + 1) * 3).map((image, index) => (
+          <div className="image-container" key={index}>
+            <Image src={image.src} alt={image.name} format="webp" />
+            <div className="image-caption">{image.name}</div>
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+);
+
+export default PhotoGallery;
