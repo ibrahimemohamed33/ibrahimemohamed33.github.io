@@ -33,58 +33,58 @@ import '../styles/cooking.css';
 </BaseLayout>
 
 <script>
-  onPageLoad(() => {
-    // JavaScript for preloading images and dynamically adding images and names
-    const images = [
-      { src: '/food_1.webp', name: 'Astro Photo 1' },
-      { src: '/food_1.webp', name: 'Astro Photo 2' },
-      { src: '/food_1.webp', name: 'Astro Photo 3' },
-      { src: '/food_1.webp', name: 'Astro Photo 4' },
-      { src: '/food_1.webp', name: 'Astro Photo 5' },
-      { src: '/food_1.webp', name: 'Astro Photo 6' },
-    ];
+  // JavaScript for preloading images and dynamically adding images and names
+  const images = [
+    { src: '/food_1.webp', name: 'Astro Photo 1' },
+    { src: '/food_1.webp', name: 'Astro Photo 2' },
+    { src: '/food_1.webp', name: 'Astro Photo 3' },
+    { src: '/food_1.webp', name: 'Astro Photo 4' },
+    { src: '/food_1.webp', name: 'Astro Photo 5' },
+    { src: '/food_1.webp', name: 'Astro Photo 6' },
+  ];
 
-    // Preload images
-    const preloadImages = () => {
-      for (const image of images) {
-        const img = new Image();
-        img.src = image.src;
+  // Preload images
+  const preloadImages = () => {
+    for (const image of images) {
+      const img = new Image();
+      img.src = image.src;
+    }
+  };
+
+  // Add images and names dynamically
+  const addImages = () => {
+    const gallery = document.getElementById('astro-gallery');
+    let currentRow;
+
+    images.forEach((image, index) => {
+      if (index % 3 === 0) {
+        currentRow = document.createElement('div');
+        currentRow.classList.add('gallery-row');
+        gallery.appendChild(currentRow);
       }
-    };
 
-    // Add images and names dynamically
-    const addImages = () => {
-      const gallery = document.getElementById('astro-gallery');
-      let currentRow;
+      const imageContainer = document.createElement('div');
+      imageContainer.classList.add('image-container');
 
-      images.forEach((image, index) => {
-        if (index % 3 === 0) {
-          currentRow = document.createElement('div');
-          currentRow.classList.add('gallery-row');
-          gallery.appendChild(currentRow);
-        }
+      const img = document.createElement('img');
+      img.src = image.src;
+      img.alt = image.name;
 
-        const imageContainer = document.createElement('div');
-        imageContainer.classList.add('image-container');
+      const name = document.createElement('div');
+      name.textContent = image.name;
+      name.classList.add('image-caption');
 
-        const img = document.createElement('img');
-        img.src = image.src;
-        img.alt = image.name;
+      imageContainer.appendChild(img);
+      imageContainer.appendChild(name);
+      currentRow.appendChild(imageContainer);
+    });
+  };
 
-        const name = document.createElement('div');
-        name.textContent = image.name;
-        name.classList.add('image-caption');
+  // Call preloadImages function when the page initially loads
+  preloadImages();
 
-        imageContainer.appendChild(img);
-        imageContainer.appendChild(name);
-        currentRow.appendChild(imageContainer);
-      });
-    };
-
-    // Preload images before adding them dynamically
-    preloadImages();
-
-    // Add images and names after preloading
+  onPageLoad(() => {
+    // Call addImages function when the page loads
     addImages();
   });
 </script>
