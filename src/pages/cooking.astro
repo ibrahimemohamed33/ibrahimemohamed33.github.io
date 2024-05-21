@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { onPageLoad } from "astro/dist/core.mjs";
+import { createState } from "astro/dist/astro.mjs";
 import '../styles/cooking.css';
 ---
 
@@ -33,6 +34,11 @@ import '../styles/cooking.css';
 </BaseLayout>
 
 <script>
+  // Define global state to track whether images have been loaded
+  const { getState, setState, subscribe } = createState({
+    imagesLoaded: false
+  });
+
   // JavaScript for preloading images and dynamically adding images and names
   const images = [
     { src: '/food_1.webp', name: 'Astro Photo 1' },
@@ -78,13 +84,26 @@ import '../styles/cooking.css';
       imageContainer.appendChild(name);
       currentRow.appendChild(imageContainer);
     });
+
+    // Update global state to indicate images are loaded
+    setState({ imagesLoaded: true });
   };
 
-  // Call preloadImages function when the page initially loads
+  // Subscribe to changes in global state
+  subscribe((state) => {
+    // When imagesLoaded state changes to true, add images
+    if (state.imagesLoaded) {
+      addImages();
+    }
+  });
+
+  // Preload images when the page initially loads
   preloadImages();
 
   onPageLoad(() => {
-    // Call addImages function when the page loads
-    addImages();
+    // If the images are not yet loaded (e.g., navigating from the sidebar), add them
+    if (!getState().imagesLoaded) {
+      addImages();
+    }
   });
 </script>
