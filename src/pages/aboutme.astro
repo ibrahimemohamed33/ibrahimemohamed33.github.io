@@ -24,6 +24,18 @@ import { Image } from "astro:assets";
       <text class="text-lg">
         Before coming back to the D.C. area, I was a student at the University of Chicago, where I majored in math and took a wide variety of classes in computer science. I realized throughout college that I enjoyed solving problems outside the scope of pure math and inside the scope of applied CS. I also came to understand that producers, ranging from your local shop to big corporations, can only benefit consumers if they leverage the right data to make the right insights. I gravitated toward data-driven roles and found data engineering to have unique problems that required wearing many interesting hats. 
       </text>
+      {
+    <container class="flex">
+      <Image
+        src={"/profile_1.webp"}
+        width={400}
+        height={600}
+        alt="Image of me with cat"
+        format="webp"
+        class="max-w-full md:max-w-[13rem] mr-10"
+      />
+      </container>
+    }
     </div>
     <div class="py-2">
       <text class="text-lg">
@@ -39,13 +51,10 @@ import { Image } from "astro:assets";
   </div>
 
   <div class="divider my-0"></div>
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Me and my favorite colleagues</div>
-  </div>
   {
     <container class="flex">
       <Image
-        src={"/profile_3.webp"}
+        src={"/profile_1.webp"}
         width={400}
         height={600}
         alt="Image of me with cat"
@@ -53,7 +62,15 @@ import { Image } from "astro:assets";
         class="max-w-full md:max-w-[13rem] mr-10"
       />
       <Image
-        src={"/profile_5.webp"}
+        src={"/profile_2.webp"}
+        width={400}
+        height={600}
+        alt="Image of me with cat"
+        format="webp"
+        class="max-w-full md:max-w-[13rem] mr-10"
+      />
+      <Image
+        src={"/profile_3.webp"}
         width={400}
         height={600}
         alt="Image of me with cat"
